@@ -43,35 +43,42 @@
           <!-- Content -->
           <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row">
-              <div class="col-lg-12 mb-8 order-0">
+              <div class="col-lg-12 mb-8 order-10">
                 <div class="card">
                   <div class="d-flex align-items-start row">
                     <div class="col-sm-6">
                       <div class="card-body">
-                        <h5 class="card-title text-primary mb-3">Trường Cao Đẳng Kỹ Thuật Cao Thắng </h5>
-                        <p class="mb-8">
+                        <h5 class="card-title text-primary mb-3 bold-title" style="font-size: 2em; font-weight: bold;">
+                          Trường Cao Đẳng Kỹ Thuật Cao Thắng</h5>
+
+                        <p class="mb-8 student-name">
                           Sinh Viên :Nguyễn Văn Thanh
                         </p>
-                        <p class="mb-4">
+                        <p class="mb-8 student-name"> Lê Văn Nhiều</p>
+                        <style>
+                          .student-name {
 
-
-                          Lê Văn Nhiều
-                        </p>
+                            font-size: 1.5em;
+                            /* Kích thước chữ */
+                            font-weight: bold;
+                            /* In đậm */
+                            color: #333;
+                            /* Màu chữ */
+                            margin-bottom: 1px;
+                            /* Khoảng cách giữa các dòng */
+                          }
+                        </style>
 
                         <!-- //   <a href="javascript:;" class="btn btn-sm btn-outline-primary">Lét Gô !!! </a> -->
                       </div>
                     </div>
-
-
                     <div class="col-sm-4 text-center text-sm-left">
                       <div class="card-body pb-0 px-0 px-md-4">
                         <img
                           src="https://cdn.haitrieu.com/wp-content/uploads/2023/01/Logo-Truong-Cao-dang-Ky-thuat-Cao-Thang.png"
-                          height="160" class="scaleX-n1-rtl" alt="View Badge User" />
-
-
+                          alt="Logo Trường Cao Đẳng Kỹ Thuật Cao Thắng" class="scaleX-n1-rtl"
+                          style="width: 100%; max-width: 160px; height: auto; border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;" />
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -189,17 +196,18 @@
 
                     // Đặt lại margin và padding của body
                     document.body.style.cssText = `
-                        margin: 0;
-                        padding: 0;
-                        height: 100vh;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
-                        background-size: 400% 400%;
-                        animation: gradientBG 10s ease infinite;
-                        font-family: 'Courier New', Courier, monospace;
-                        box-sizing: border-box;
+     margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Đẩy đồng hồ xuống cuối */
+    align-items: center;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
                     `;
 
                     clockContainer.style.cssText = `
@@ -217,7 +225,7 @@
                     clock.style.cssText = `
                         font-size: 4em;
                         font-weight: bold;
-                        color: blue ;
+                        color: #4F4F4F ;
                         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
                     `;
 
@@ -226,7 +234,7 @@
                         color: #f5f5f5;
                         margin-top: 10px;
                         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-                        color: red;
+                        color: #4F4F4F;
                     `;
 
                     // Hiệu ứng nền động
@@ -253,7 +261,8 @@
                     setInterval(updateTime, 1000);
                     updateTime();
                   </script>
-                  <div id="clock" style="font-size: 2em; font-weight: bold; color: #1d61c8;text-align: center;">Đồ Án Học Phần Tự Động 
+                  <div id="clock" style="font-size: 2em; font-weight: bold; color: #1d61c8;text-align: center;">Đồ Án
+                    Học Phần Tự Động
                   </div>
 
                   <!-- Core JS -->
